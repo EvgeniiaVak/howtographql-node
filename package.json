@@ -1,0 +1,9 @@
+{
+  "name": "howtographql-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "run": "node src/index.js"
+  }
+}
