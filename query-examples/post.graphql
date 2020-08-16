@@ -1,5 +1,8 @@
 mutation {
-  post: post(description: "Another one  - - - ", url: "some/test/url3") {
+  post(
+    url: "www.graphqlconf.org"
+    description: "An awesome GraphQL conference"
+  ) {
     id
   }
 }

@@ -1,5 +1,5 @@
 mutation {
-  updateLink: updateLink(id: "4", description: "updated description!") {
+  updateLink: updateLink(id: "7", description: "updated description!") {
     id
     url
     description

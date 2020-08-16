@@ -1,0 +1,39 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type AuthPayload {
+  token: String
+  user: User
+}
+
+type Link {
+  description: String!
+  id: ID!
+  postedBy: User
+  url: String!
+}
+
+type Mutation {
+  deleteLink(id: ID!): Link
+  login(email: String!, password: String!): AuthPayload
+  post(description: String!, url: String!): Link!
+  signup(email: String!, name: String!, password: String!): AuthPayload
+  updateLink(description: String, id: ID!, url: String): Link
+}
+
+type Query {
+  feed: [Link]!
+  info: String!
+  link(id: ID!): Link
+}
+
+type User {
+  email: String!
+  id: ID!
+  links: [Link!]!
+  name: String!
+}

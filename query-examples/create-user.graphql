@@ -1,0 +1,12 @@
+mutation {
+  signup(
+    name: "Alice"
+    email: "alice@prisma.io"
+    password: "graphql"
+  ) {
+    token
+    user {
+      id
+    }
+  }
+}
