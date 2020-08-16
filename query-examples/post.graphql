@@ -1,0 +1,5 @@
+mutation {
+  post: post(description: "A new link", url: "some/test/url") {
+    id
+  }
+}

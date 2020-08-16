@@ -1,0 +1,7 @@
+mutation {
+  updateLink: updateLink(id: "link-0", description: "updated description!") {
+    id
+    url
+    description
+  }
+}

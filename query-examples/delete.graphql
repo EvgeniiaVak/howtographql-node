@@ -1,0 +1,5 @@
+mutation {
+  deleteLink: deleteLink(id: "link-1") {
+    id
+  }
+}

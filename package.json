@@ -5,5 +5,8 @@
   "license": "MIT",
   "scripts": {
     "run": "node src/index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
   }
 }

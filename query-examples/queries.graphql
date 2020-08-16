@@ -1,0 +1,15 @@
+query {
+  feed: feed {
+    url
+    description
+  }
+
+  feed_ids: feed {
+    id
+  }
+
+  first_link: link(id: "link-0") {
+    url
+    description
+  }
+}

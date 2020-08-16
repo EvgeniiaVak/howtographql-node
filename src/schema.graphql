@@ -1,0 +1,17 @@
+type Mutation {
+  deleteLink(id: ID!): Link
+  post(description: String!, url: String!): Link!
+  updateLink(description: String, id: ID!, url: String): Link
+}
+
+type Query {
+  feed: [Link]!
+  info: String!
+  link(id: ID!): Link
+}
+
+type Link {
+  description: String!
+  id: ID!
+  url: String!
+}
