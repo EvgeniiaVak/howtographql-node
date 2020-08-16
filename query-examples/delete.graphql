@@ -1,5 +1,5 @@
 mutation {
-  deleteLink: deleteLink(id: "link-1") {
+  deleteLink: deleteLink(id: "3") {
     id
   }
 }

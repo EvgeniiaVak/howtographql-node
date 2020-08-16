@@ -1,5 +1,5 @@
 mutation {
-  post: post(description: "A new link", url: "some/test/url") {
+  post: post(description: "Another one  - - - ", url: "some/test/url3") {
     id
   }
 }

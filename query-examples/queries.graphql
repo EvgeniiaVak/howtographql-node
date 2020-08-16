@@ -8,7 +8,7 @@ query {
     id
   }
 
-  first_link: link(id: "link-0") {
+  first_link: link(id: "1") {
     url
     description
   }
