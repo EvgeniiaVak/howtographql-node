@@ -3,6 +3,7 @@
 schema {
   query: Query
   mutation: Mutation
+  subscription: Subscription
 }
 
 type AuthPayload {
@@ -15,6 +16,7 @@ type Link {
   id: ID!
   postedBy: User
   url: String!
+  votes: [Vote!]!
 }
 
 type Mutation {
@@ -23,6 +25,7 @@ type Mutation {
   post(description: String!, url: String!): Link!
   signup(email: String!, name: String!, password: String!): AuthPayload
   updateLink(description: String, id: ID!, url: String): Link
+  vote(linkId: ID!): Vote
 }
 
 type Query {
@@ -31,9 +34,20 @@ type Query {
   link(id: ID!): Link
 }
 
+type Subscription {
+  newLink: Link
+  newVote: Vote
+}
+
 type User {
   email: String!
   id: ID!
   links: [Link!]!
   name: String!
+}
+
+type Vote {
+  id: ID!
+  link: Link!
+  user: User!
 }

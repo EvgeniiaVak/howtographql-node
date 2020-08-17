@@ -1,0 +1,12 @@
+mutation {
+  vote(linkId: "1") {
+    link {
+      url
+      description
+    }
+    user {
+      name
+      email
+    }
+  }
+}

@@ -1,7 +1,7 @@
 mutation {
   post(
-    url: "www.graphqlconf.org"
-    description: "An awesome GraphQL conference"
+    url: "https://www.howtographql.com/123"
+    description: "subscribed here too 123"
   ) {
     id
   }

@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "run": "node src/index.js"
+    "run": "node src/index.js",
+    "prisma": "prisma studio --experimental"
   },
   "dependencies": {
     "@prisma/cli": "2.4.1",
