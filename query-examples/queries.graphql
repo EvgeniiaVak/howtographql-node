@@ -4,6 +4,16 @@ query {
     description
   }
 
+  filtered_feed: feed(filter:"QL") {
+    id
+    description
+    url
+    postedBy {
+      id
+      name
+    }
+  }
+
   feed_ids: feed {
     id
   }

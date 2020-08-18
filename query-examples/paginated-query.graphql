@@ -1,0 +1,14 @@
+query {
+  feed(
+    take: 3
+    skip: 1
+    orderBy: { createdAt: asc }
+  ){
+    count
+    links {
+      id
+      description
+      url
+    }
+  }
+}

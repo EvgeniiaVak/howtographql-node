@@ -9,7 +9,9 @@ const User = require('./resolvers/User')
 const Link = require('./resolvers/Link')
 const Vote = require('./resolvers/Vote')
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient({
+  log: ['query', 'info', 'warn'],
+})
 const pubsub = new PubSub()
 
 const resolvers = {
