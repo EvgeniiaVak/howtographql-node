@@ -4,11 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "run": "node src/index.js",
+    "start": "node src/index.js",
     "prisma": "prisma studio --experimental"
   },
   "dependencies": {
-    "@prisma/cli": "2.4.1",
+    "@prisma/cli": "^2.11.0",
     "@prisma/client": "2.4.1",
     "bcryptjs": "^2.4.3",
     "graphql-yoga": "^1.18.3",
