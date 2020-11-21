@@ -9,6 +9,9 @@ const User = require('./resolvers/User')
 const Link = require('./resolvers/Link')
 const Vote = require('./resolvers/Vote')
 
+process.env.PORT = 3455
+// process.env.PORT = 4000
+
 const prisma = new PrismaClient({
   log: ['query', 'info', 'warn'],
 })
@@ -36,4 +39,4 @@ const server = new GraphQLServer({
 })
 
 
-server.start(() => console.log(`Server is running on http://localhost:4000`))
+server.start(() => console.log(`Server is running on http://localhost:${process.env.PORT}`))
